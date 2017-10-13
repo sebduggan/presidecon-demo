@@ -1,0 +1,14 @@
+{
+    "name":"PresideCon Images Demo",
+    "version":"1.0.0",
+    "author":"Seb Duggan",
+    "slug":"presidecondemo",
+    "createPackageDirectory" : false,
+    "private":true,
+    "installPaths":{
+        "presidecms":"preside"
+    },
+    "dependencies":{
+        "presidecms":"stable"
+    }
+}
