@@ -1,0 +1,14 @@
+.header, .footer {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.banner-image img {
+	width: 100%;
+}
+
+.page-content {
+	max-width: 40em;
+	padding: 0 1em;
+	margin: 1em auto;
+}

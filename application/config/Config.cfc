@@ -18,5 +18,48 @@ component extends="preside.system.config.Config" {
 		settings.ckeditor.defaults.stylesheets.append( "css-layout" );
 
 		settings.features.websiteUsers.enabled = false;
+
+		settings.assetManager.derivatives.bannerImage = {
+			  permissions     = "inherit"
+			, transformations = [
+				{
+					  method = "resize"
+					, args   = {
+						  width               = 1300
+						, height              = 400
+						, maintainAspectRatio = true
+					  }
+				}
+			  ]
+		};
+
+		settings.assetManager.derivatives.bannerImageMedium = {
+			  permissions     = "inherit"
+			, transformations = [
+				{
+					  method = "resize"
+					, args   = {
+						  width               = 800
+						, height              = 400
+						, maintainAspectRatio = true
+					  }
+				}
+			  ]
+		};
+
+		settings.assetManager.derivatives.bannerImageSmall = {
+			  permissions     = "inherit"
+			, transformations = [
+				{
+					  method = "resize"
+					, args   = {
+						  width               = 600
+						, height              = 400
+						, maintainAspectRatio = true
+						, useCropHint         = true
+					  }
+				}
+			  ]
+		};
 	}
 }

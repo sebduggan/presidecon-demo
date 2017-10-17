@@ -6,6 +6,7 @@
 
 	event.include( "css-bootstrap" )
 	     .include( "css-layout"    )
+	     .include( "css-demo"      )
 	     .include( "js-bootstrap"  )
 	     .include( "js-jquery"     );
 </cfscript>
@@ -24,12 +25,12 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container">
+		<!--- <div class="container"> --->
 			<div class="header">
 				<ul class="nav nav-pills pull-right">
 					#mainNav#
 				</ul>
-				<h3 class="text-muted"><a href="/">Preside CMS</a></h3>
+				<h3 class="text-muted"><a href="/">PresideCon Images Demo</a></h3>
 			</div>
 
 			#body#
@@ -37,7 +38,7 @@
 			<div class="footer">
 				<p>&copy; Pixl8 2013-#Year( Now() )#</p>
 			</div>
-		</div>
+		<!--- </div> --->
 
 		#adminBar#
 
