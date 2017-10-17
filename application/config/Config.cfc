@@ -32,7 +32,6 @@ component extends="preside.system.config.Config" {
 				}
 			  ]
 		};
-
 		settings.assetManager.derivatives.bannerImageMedium = {
 			  permissions     = "inherit"
 			, transformations = [
@@ -46,7 +45,6 @@ component extends="preside.system.config.Config" {
 				}
 			  ]
 		};
-
 		settings.assetManager.derivatives.bannerImageSmall = {
 			  permissions     = "inherit"
 			, transformations = [
@@ -55,6 +53,23 @@ component extends="preside.system.config.Config" {
 					, args   = {
 						  width               = 600
 						, height              = 400
+						, maintainAspectRatio = true
+						, useCropHint         = true
+					  }
+				}
+			  ]
+		};
+
+
+
+		settings.assetManager.derivatives.avatar = {
+			  permissions     = "inherit"
+			, transformations = [
+				{
+					  method = "resize"
+					, args   = {
+						  width               = 150
+						, height              = 150
 						, maintainAspectRatio = true
 						, useCropHint         = true
 					  }
